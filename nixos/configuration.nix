@@ -130,6 +130,8 @@
      themechanger
      polybar
      picom
+     feh
+     rofi
   ];
 
   # Shell
