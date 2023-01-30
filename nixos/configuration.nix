@@ -129,6 +129,7 @@
      xorg.xinit
      themechanger
      polybar
+     picom
   ];
 
   # Shell
