@@ -25,6 +25,10 @@ cp -R $HOME/.config/picom/ $HOME/Documents/nixfiles/dotconfig/global/
 rm -R $HOME/Documents/nixfiles/dotconfig/global/fish/
 cp -R $HOME/.config/fish/ $HOME/Documents/nixfiles/dotconfig/global/
 
+# xinitrc
+rm $HOME/Documents/nixfiles/dotconfig/global/.xinitrc
+cp $HOME/.xinitrc $HOME/Documents/nixfiles/dotconfig/global/
+
 cd $HOME/Documents/nixfiles/
 git add -A
 git commit -m "NixOS update"
