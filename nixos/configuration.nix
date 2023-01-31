@@ -15,6 +15,14 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
+  # Graphics
+  boot.initrd.kernelModules = [ "amdgpu" ];
+
+  # Kernel Parameters
+  boot.kernelParams = [
+    "video=eDP-1:1920x1080@68"
+  ];
+
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -24,6 +32,10 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Bluetooth Support
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Guayaquil";
@@ -92,6 +104,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
+      brave
       # kate
       # thunderbird
     ];
@@ -110,6 +123,7 @@
      yarn
      exa
      bat
+     xsel
      wget
      mpv
      discord
@@ -132,6 +146,17 @@
      picom
      feh
      rofi
+     brightnessctl
+     networkmanagerapplet
+     pavucontrol
+     qtstyleplugin-kvantum-qt4
+     blueman
+     gnome.gnome-disk-utility
+     ranger
+     maim
+     xdotool
+     xclip
+     rubyPackages.prettier
   ];
 
   # Shell

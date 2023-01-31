@@ -49,6 +49,9 @@ cp -R $HOME/.config/fish/ $HOME/Documents/nixfiles/dotconfig/global/
 rm $HOME/Documents/nixfiles/dotconfig/global/.xinitrc
 cp $HOME/.xinitrc $HOME/Documents/nixfiles/dotconfig/global/
 
+# NixOS Stuff
+sudo cp /etc/nixos/configuration.nix $HOME/Documents/nixfiles/nixos/
+
 cd $HOME/Documents/nixfiles/
 git add -A
 git commit -m "NixOS update"
