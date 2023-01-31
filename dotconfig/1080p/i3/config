@@ -21,6 +21,9 @@ font pango:UbuntuMono Nerd Font 0
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# Polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
@@ -83,8 +86,8 @@ set $refresh_i3status killall -SIGUSR1 i3status
 # bindsym $mod+Control+m exec --no-startup-id pactl set-sink-mute @DEFAULT-SINK@ toggle
 #
 # Alsa
-bindsym $mod+Control+equal exec --no-startup-id amixer set Master 5%+
-bindsym $mod+Control+minus exec --no-startup-id amixer set Master 5%-
+bindsym $mod+Control+equal exec --no-startup-id amixer set Master 1%+
+bindsym $mod+Control+minus exec --no-startup-id amixer set Master 1%-
 bindsym $mod+Control+m exec --no-startup-id amixer set Master toggle
 ##
 
@@ -127,21 +130,20 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e layout splith
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+t floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym Mod1+t focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

@@ -152,12 +152,14 @@
      qtstyleplugin-kvantum-qt4
      blueman
      gnome.gnome-disk-utility
-     ranger
+     nnn
      maim
      xdotool
      xclip
      rubyPackages.prettier
      xorg.xev
+     polkit
+     polkit_gnome
   ];
 
   # Shell
