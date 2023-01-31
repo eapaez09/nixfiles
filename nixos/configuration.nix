@@ -157,6 +157,7 @@
      xdotool
      xclip
      rubyPackages.prettier
+     xorg.xev
   ];
 
   # Shell
