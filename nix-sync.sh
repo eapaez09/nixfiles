@@ -50,6 +50,7 @@ rm $HOME/Documents/nixfiles/dotconfig/global/.xinitrc
 cp $HOME/.xinitrc $HOME/Documents/nixfiles/dotconfig/global/
 
 # NixOS Stuff
+sudo rm $HOME/Documents/nixfiles/nixos/configuration.nix
 sudo cp /etc/nixos/configuration.nix $HOME/Documents/nixfiles/nixos/
 
 cd $HOME/Documents/nixfiles/
