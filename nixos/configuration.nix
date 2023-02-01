@@ -13,15 +13,15 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   # Graphics
-  boot.initrd.kernelModules = [ "amdgpu" ];
+  # boot.initrd.kernelModules = [ "amdgpu" ];
 
   # Kernel Parameters
-  boot.kernelParams = [
-    "video=eDP-1:1920x1080@68"
-  ];
+  # boot.kernelParams = [
+  #   "video=eDP-1:1920x1080@68"
+  # ];
 
   # Polkit
   security.polkit.enable = true;
@@ -40,6 +40,12 @@
   # Bluetooth Support
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
+
+  # Touchpad
+  services.xserver.libinput.enable = true;
+  services.xserver.libinput.touchpad.naturalScrolling = false;
+  services.xserver.libinput.touchpad.middleEmulation = true;
+  services.xserver.libinput.touchpad.tapping = true;
 
   # Set your time zone.
   time.timeZone = "America/Guayaquil";
@@ -130,7 +136,6 @@
      xsel
      wget
      mpv
-     discord
      neofetch
      htop
      btop

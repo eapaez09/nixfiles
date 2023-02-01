@@ -1,0 +1,28 @@
+configuration {
+    location:                       2;
+}
+
+@import "colors.rasi"
+@import "font.rasi"
+
+* {
+    background-color:       @BG;
+    text-color:             @FG;
+}
+
+window {
+    width:      	        250px;
+    padding:                20px;
+    border:		            1px 1px 1px 1px;
+    border-radius:          0px;
+    border-color:           @BDR;
+    location:               0;
+    x-offset:               0;
+    y-offset:               10px;
+}
+
+entry {
+    expand: 		        true;
+    width: 		            150px;
+    text-color:		        @FG;
+}
