@@ -22,7 +22,7 @@ font pango:UbuntuMono Nerd Font 0
 #font pango:DejaVu Sans Mono 8
 
 # Polkit
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id lxpolkit &
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart

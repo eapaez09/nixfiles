@@ -23,6 +23,10 @@
     "video=eDP-1:1920x1080@68"
   ];
 
+  # Polkit
+  security.polkit.enable = true;
+
+  # Network
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -127,7 +131,6 @@
      wget
      mpv
      discord
-     steam
      neofetch
      htop
      btop
@@ -152,26 +155,21 @@
      qtstyleplugin-kvantum-qt4
      blueman
      gnome.gnome-disk-utility
-     nnn
+     ranger
      maim
      xdotool
      xclip
      rubyPackages.prettier
      xorg.xev
      polkit
-     polkit_gnome
+     lxde.lxsession
+     python3Full
+     python310Packages.pip
   ];
 
   # Shell
     programs.fish.enable = true;
     users.defaultUserShell = pkgs.fish;
-
-  # Steam
-  programs.steam = {
-    enable = true;
-    remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-    dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  };
 
   # Automount devices
   services.gvfs.enable = true;
