@@ -130,8 +130,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout splith
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout splith
+bindsym $mod+Tab layout toggle tabbed splith
 
 # toggle tiling / floating
 bindsym $mod+t floating toggle
@@ -215,6 +216,9 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+bindsym $mod+b exec brave
+bindsym $mod+e exec alacritty -e ranger
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
