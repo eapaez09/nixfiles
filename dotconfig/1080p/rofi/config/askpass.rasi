@@ -18,7 +18,7 @@ window {
     border-color:           @BDR;
     location:               0;
     x-offset:               0;
-    y-offset:               10px;
+    y-offset:               55px;
 }
 
 entry {

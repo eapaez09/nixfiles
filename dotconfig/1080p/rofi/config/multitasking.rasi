@@ -1,3 +1,4 @@
+
 configuration {
     location:                       2;
 }
@@ -12,11 +13,11 @@ window {
     border:                         1px;
     border-color:                   @BDR;
     border-radius:                  0px;
-    width:                          550px;
-    height:                         190px;
+    width:                          900px;
+    height:                         295px;
     anchor:                         center;
     x-offset:                       0;
-    y-offset:                       150px;
+    y-offset:                       200px;
 }
 
 prompt {
@@ -36,7 +37,7 @@ entry {
     placeholder-color:              @FG;
     expand:                         true;
     horizontal-align:               0;
-    placeholder:                    "Applications...";
+    placeholder:                    "Tab Switcher...";
     blink:                          true;
     border:                  	    1px 1px 1px 1px;
     border-color:                   @BDR;
@@ -54,7 +55,7 @@ case-indicator {
 listview {
     background-color:               @BG;
     columns:                        1;
-    lines:			                2;
+    lines:			                10;
     spacing:                        10px;
     cycle:                          true;
     dynamic:                        false;
@@ -63,7 +64,7 @@ listview {
 
 mainbox {
     background-color:               @BG;
-    children:                       [ inputbar, listview ];
+    children:                       [ listview ];
     spacing:                        15px;
     padding:                        15px;
 }

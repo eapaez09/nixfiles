@@ -82,7 +82,7 @@ bindsym $mod+p exec ~/.config/rofi/bin/monitor
 bindsym $mod+s exec --no-startup-id ~/.config/rofi/bin/screenshot
 #
 # Window Switcher
-bindsym Mod1+Tab exec --no-startup-id rofi -show window
+bindsym Mod1+Tab exec --no-startup-id ~/.config/rofi/bin/multitasking
 ##
 
 ## Volume Management

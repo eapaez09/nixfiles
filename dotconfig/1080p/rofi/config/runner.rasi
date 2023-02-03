@@ -14,7 +14,7 @@ window {
     width:                          750px;
     anchor:                         center;
     x-offset:                       0;
-    y-offset:                       110;
+    y-offset:                       155px;
 }
 
 prompt {
