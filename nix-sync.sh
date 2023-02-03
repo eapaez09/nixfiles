@@ -52,6 +52,10 @@ cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/global/
 rm -R $HOME/Documents/nixfiles/dotconfig/global/picom/
 cp -R $HOME/.config/picom/ $HOME/Documents/nixfiles/dotconfig/global/
 #
+# neofetch
+rm -R $HOME/Documents/nixfiles/dotconfig/global/neofetch/
+cp -R $HOME/.config/neofetch/ $HOME/Documents/nixfiles/dotconfig/global/
+#
 # fish
 rm -R $HOME/Documents/nixfiles/dotconfig/global/fish/
 cp -R $HOME/.config/fish/ $HOME/Documents/nixfiles/dotconfig/global/
