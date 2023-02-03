@@ -20,7 +20,7 @@ window {
     width:                          750px;
     anchor:                         center;
     x-offset:                       0;
-    y-offset:                       50px;
+    y-offset:                       95px;
 }
 
 prompt {

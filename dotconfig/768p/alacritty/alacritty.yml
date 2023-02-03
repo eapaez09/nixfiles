@@ -149,7 +149,7 @@ font:
 
   # Bold italic font face
   bold_italic:
-    family: UbuntuMono Nerd Font
+    family: UbuntuMono Nerd Font Mono
     style: Italic
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
