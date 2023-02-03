@@ -5,15 +5,11 @@ cd
 
 if [[ $1 == "hp" ]]; then
     #
-    # SPECIFIC APPS
+    # Specific Apps
     #
     # alacritty
     rm -R $HOME/Documents/nixfiles/dotconfig/1080p/alacritty/
     cp -R $HOME/.config/alacritty/ $HOME/Documents/nixfiles/dotconfig/1080p/
-
-    # i3
-    rm -R $HOME/Documents/nixfiles/dotconfig/1080p/i3/
-    cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/1080p/
 
     # rofi
     rm -R $HOME/Documents/nixfiles/dotconfig/1080p/rofi/
@@ -25,15 +21,11 @@ if [[ $1 == "hp" ]]; then
 
 elif [[ $1 == "asus" ]]; then
     #
-    # SPECIFIC APPS
+    # Specific Apps
     #
     # alacritty
     rm -R $HOME/Documents/nixfiles/dotconfig/768p/alacritty/
     cp -R $HOME/.config/alacritty/ $HOME/Documents/nixfiles/dotconfig/768p/
-
-    # i3
-    rm -R $HOME/Documents/nixfiles/dotconfig/768p/i3/
-    cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/768p/
 
     # rofi
     rm -R $HOME/Documents/nixfiles/dotconfig/768p/rofi/
@@ -50,20 +42,24 @@ else
 fi
 
 #
-# GLOBAL APPS
+# Global Apps
+#
+# i3
+rm -R $HOME/Documents/nixfiles/dotconfig/global/i3/
+cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/global
 #
 # picom
 rm -R $HOME/Documents/nixfiles/dotconfig/global/picom/
 cp -R $HOME/.config/picom/ $HOME/Documents/nixfiles/dotconfig/global/
-
+#
 # fish
 rm -R $HOME/Documents/nixfiles/dotconfig/global/fish/
 cp -R $HOME/.config/fish/ $HOME/Documents/nixfiles/dotconfig/global/
-
+#
 # xinitrc
 rm $HOME/Documents/nixfiles/dotconfig/global/.xinitrc
 cp $HOME/.xinitrc $HOME/Documents/nixfiles/dotconfig/global/
-
+#
 # NixOS Stuff
 sudo rm $HOME/Documents/nixfiles/nixos/configuration.nix
 sudo rm $HOME/Documents/nixfiles/nixos/packages.nix
