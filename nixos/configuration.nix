@@ -170,6 +170,7 @@
      lxde.lxsession
      python3Full
      python310Packages.pip
+     killall
   ];
 
   # Shell
