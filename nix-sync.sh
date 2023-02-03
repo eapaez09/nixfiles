@@ -46,7 +46,7 @@ fi
 #
 # i3
 rm -R $HOME/Documents/nixfiles/dotconfig/global/i3/
-cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/global
+cp -R $HOME/.config/i3/ $HOME/Documents/nixfiles/dotconfig/global/
 #
 # picom
 rm -R $HOME/Documents/nixfiles/dotconfig/global/picom/
