@@ -66,7 +66,9 @@ cp $HOME/.xinitrc $HOME/Documents/nixfiles/dotconfig/global/
 
 # NixOS Stuff
 sudo rm $HOME/Documents/nixfiles/nixos/configuration.nix
+sudo rm $HOME/Documents/nixfiles/nixos/packages.nix
 sudo cp /etc/nixos/configuration.nix $HOME/Documents/nixfiles/nixos/
+sudo cp /etc/nixos/packages.nix $HOME/Documents/nixfiles/nixos/
 
 cd $HOME/Documents/nixfiles/
 git add -A
