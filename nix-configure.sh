@@ -14,7 +14,7 @@ if [[  $1 == "hp" ]]; then
     cp -R $HOME/Documents/nixfiles/dotconfig/global/i3/ $HOME/.config/
     cp -R $HOME/Documents/nixfiles/dotconfig/global/neofetch/ $HOME/.config/
     cp -R $HOME/Documents/nixfiles/dotconfig/global/picom/ $HOME/.config/
-    cp $HOME/Documents/nixfiles/global/.xinitrc $HOME/
+    cp $HOME/Documents/nixfiles/dotconfig/global/.xinitrc $HOME/
 
     # nix os settings
     sudo rm /etc/nixos/configuration.nix
@@ -35,7 +35,7 @@ elif [[  $1 == "asus" ]]; then
     cp -R $HOME/Documents/nixfiles/dotconfig/global/i3/ $HOME/.config/
     cp -R $HOME/Documents/nixfiles/dotconfig/global/neofetch/ $HOME/.config/
     cp -R $HOME/Documents/nixfiles/dotconfig/global/picom/ $HOME/.config/
-    cp $HOME/Documents/nixfiles/global/.xinitrc $HOME/
+    cp $HOME/Documents/nixfiles/dotconfig/global/.xinitrc $HOME/
 
     # nix os settings
     sudo rm /etc/nixos/configuration.nix
