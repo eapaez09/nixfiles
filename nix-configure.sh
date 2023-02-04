@@ -26,7 +26,7 @@ if [[  $1 == "hp" ]]; then
 elif [[  $1 == "asus" ]]; then
 
     # dotfiles stuff
-    rm -r $home/.config/alacritty/ $home/.config/polybar/ $home/.config/rofi/
+    rm -R $HOME/.config/alacritty/ $HOME/.config/polybar/ $HOME/.config/rofi/
     rm -R $HOME/.config/fish/ $HOME/.config/i3/ $HOME/.config/neofetch $HOME/.config/picom/
     rm $HOME/.xinitrc
 
