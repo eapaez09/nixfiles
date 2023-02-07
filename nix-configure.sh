@@ -54,7 +54,7 @@ elif [[  $1 == "asus" ]]; then
 
 
 else
-    echo "Please, don't forget to specify you hostname"
+    echo "Please, don't forget to specify your pc"
     echo "hp = 1920x1080"
     echo "asus = 1366x768"
 
