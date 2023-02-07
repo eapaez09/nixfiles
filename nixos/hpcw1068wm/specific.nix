@@ -9,7 +9,7 @@
 
   Kernel Parameters
   boot.kernelParams = [
-    "video=eDP-1:1920x1080@68"
+    "video=eDP:1920x1080@68"
   ];
 
 }
