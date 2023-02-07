@@ -19,6 +19,11 @@ if [[ $1 == "hp" ]]; then
     rm -R $HOME/Documents/nixfiles/dotconfig/1080p/polybar/
     cp -R $HOME/.config/polybar/ $HOME/Documents/nixfiles/dotconfig/1080p/
 
+    # Nix OS - Some AMD specific settings
+    sudo rm $HOME/Documents/nixfiles/nixos/hpcw1068wm/specific.nix
+    sudo cp /etc/nixos/specific.nix $HOME/Documents/nixfiles/nixos/hpcw1068wm/
+
+
 elif [[ $1 == "asus" ]]; then
     #
     # Specific Apps
@@ -36,8 +41,8 @@ elif [[ $1 == "asus" ]]; then
     cp -R $HOME/.config/polybar/ $HOME/Documents/nixfiles/dotconfig/768p/
 
     # Nix OS audio fix - ASUS C423
-    sudo rm $HOME/Documents/nixfiles/nixos/specificStuff/sound-fix.nix
-    sudo cp /etc/nixos/sound-fix.nix $HOME/Documents/nixfiles/nixos/specificStuff/
+    sudo rm $HOME/Documents/nixfiles/nixos/asusc423/specific.nix
+    sudo cp /etc/nixos/specific.nix $HOME/Documents/nixfiles/nixos/asusc423/
 
 
 else

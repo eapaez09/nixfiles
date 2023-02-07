@@ -19,9 +19,13 @@ if [[  $1 == "hp" ]]; then
     # nix os settings
     sudo rm /etc/nixos/configuration.nix
     sudo rm /etc//nixos/packages.nix
-
+    #
     sudo cp $HOME/Documents/nixfiles/nixos/configuration.nix /etc/nixos/
     sudo cp $HOME/Documents/nixfiles/nixos/packages.nix /etc/nixos/
+    #
+    # specific for HP cw - 1068wm
+    sudo rm /etc/nixos/specific.nix
+    sudo cp $HOME/Documents/nixfiles/nixos/hpcw1068wm/specific.nix /etc/nixos/
 
 elif [[  $1 == "asus" ]]; then
 
@@ -45,8 +49,8 @@ elif [[  $1 == "asus" ]]; then
     sudo cp $HOME/Documents/nixfiles/nixos/packages.nix /etc/nixos/
     #
     # specific for ASUS C423
-    sudo rm /etc/nixos/sound-fix.nix
-    sudo cp $HOME/Documents/nixfiles/nixos/specificStuff/sound-fix.nix /etc/nixos/
+    sudo rm /etc/nixos/specific.nix
+    sudo cp $HOME/Documents/nixfiles/nixos/asusc423/specific.nix /etc/nixos/
 
 
 else
