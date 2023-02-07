@@ -35,6 +35,10 @@ elif [[ $1 == "asus" ]]; then
     rm -R $HOME/Documents/nixfiles/dotconfig/768p/polybar/
     cp -R $HOME/.config/polybar/ $HOME/Documents/nixfiles/dotconfig/768p/
 
+    # Nix OS audio fix - ASUS C423
+    sudo rm $HOME/Documents/nixfiles/nixos/specificStuff/sound-fix.nix
+    sudo cp /etc/nixos/sound-fix.nix $HOME/Documents/nixfiles/nixos/specificStuff/
+
 
 else
     echo "Error, don't forget to specify the machine type"

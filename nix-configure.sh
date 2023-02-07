@@ -40,9 +40,14 @@ elif [[  $1 == "asus" ]]; then
     # nix os settings
     sudo rm /etc/nixos/configuration.nix
     sudo rm /etc//nixos/packages.nix
-
+    # 
     sudo cp $HOME/Documents/nixfiles/nixos/configuration.nix /etc/nixos/
     sudo cp $HOME/Documents/nixfiles/nixos/packages.nix /etc/nixos/
+    #
+    # specific for ASUS C423
+    sudo rm /etc/nixos/sound-fix.nix
+    sudo cp $HOME/Documents/nixfiles/nixos/specificStuff/sound-fix.nix /etc/nixos/
+
 
 else
     echo "Please, don't forget to specify you hostname"
