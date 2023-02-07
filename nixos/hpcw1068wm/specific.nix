@@ -4,10 +4,10 @@
 { config, pkgs, ... }:
 {
 
-  Graphics
+  # Graphics
   boot.initrd.kernelModules = [ "amdgpu" ];
 
-  Kernel Parameters
+  # Kernel Parameters
   boot.kernelParams = [
     "video=eDP:1920x1080@68"
   ];
