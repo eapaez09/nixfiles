@@ -102,9 +102,9 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.pzeadrian9 = {
+  users.users.eapaez9 = {
     isNormalUser = true;
-    description = "Edwin Paez";
+    description = "Adrian Paez Zumarraga";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       brave
