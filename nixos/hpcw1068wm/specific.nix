@@ -12,4 +12,8 @@
     "video=eDP:1920x1080@68"
   ];
 
+  environment.systemPackages = with pkgs; [
+    heroic
+  ];
+
 }
