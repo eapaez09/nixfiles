@@ -6,14 +6,24 @@
 
   # Graphics
   boot.initrd.kernelModules = [ "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
 
   # Kernel Parameters
   boot.kernelParams = [
-    "video=eDP:1920x1080@68"
+    "video=eDP:1920x1080@60"
   ];
 
   environment.systemPackages = with pkgs; [
     heroic
+    mesa
   ];
+
+   hardware.opengl = {
+    enable = true;
+    extraPackages = with pkgs; [
+      vaapiVdpau
+      libva
+    ];
+  };
 
 }

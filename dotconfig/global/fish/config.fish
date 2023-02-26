@@ -28,6 +28,7 @@ alias tree="exa -T"
 alias la="exa -la --group-directories-first"
 alias l="exa -l"
 alias v="nvim ."
+alias sv="sudo nvim ."
 
 export XDG_SESSION_TYPE=X11
 export XDG_CURRENT_DESKTOP=i3

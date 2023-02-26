@@ -50,6 +50,7 @@
     python3Full
     python310Packages.pip
     killall
+    baobab
   ]; 
 
 }
