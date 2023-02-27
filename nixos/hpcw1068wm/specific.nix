@@ -11,6 +11,8 @@
   # Kernel Parameters
   boot.kernelParams = [
     "video=eDP:1920x1080@60"
+    "quiet"
+    "udev.log_level=3"
   ];
 
   environment.systemPackages = with pkgs; [
